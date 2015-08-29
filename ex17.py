@@ -1,4 +1,10 @@
 # Exercise 17: More Files
+# Instructions for running:  
+#  $ echo "This is a test file." > test.txt
+#  $ cat test.txt
+#  $ ptyhon ex17.py test.txt new_file.txt
+
+
 
 #imports the module
 from sys import argv

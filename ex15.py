@@ -1,4 +1,5 @@
 #Exercise 15: Reading Files
+# Include ex15_sample.txt when running
 
 from sys import argv
 

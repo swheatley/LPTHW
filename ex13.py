@@ -1,5 +1,5 @@
 # Exercise 13: Parameters, Unpacking, Variables
-
+# Remember to include three variables before you run it
 from sys import argv
 
 script, first, second, third = argv

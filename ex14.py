@@ -2,7 +2,7 @@
 # remember to give the script your name before you run it
 from sys import argv
 
-script, user_named = argv
+script, user_name = argv
 prompt = '+'
 
 print "Hi %s, I'm the %s script." % (user_name, script)

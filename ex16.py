@@ -1,5 +1,5 @@
 #Exercise 16: Reading and Writing Files
-
+# Include test.txt when you run the program
 # imports the method
 from sys import argv
 
