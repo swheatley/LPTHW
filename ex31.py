@@ -35,8 +35,8 @@ elif bending == "Air":
 	
 
 elif bending == "Water":
-	print "You travel in the future and meet up with Korra of the Southern Water Tribe ."
-	print "You take Katara up on her water bending skills and practice your water wips!"
+	print " 1.You travel in the future and meet up with Korra of the Southern Water Tribe ."
+	print " 2.You take Katara up on her water bending skills and practice your water wips!"
 
 	water_bender = raw_input(">")
 
@@ -48,4 +48,4 @@ elif bending == "Water":
 		print "You take Apa and fly to the Air temple. You need some inspiration."
 
 else:
-	print "You don't defeat the fire Lord and hope in the world is lost....."
+	print "You don't defeat the Fire Lord and hope in the Avatar is lost....."
