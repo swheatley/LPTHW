@@ -7,16 +7,18 @@
 	# Make sure boolean test will become False at some point OR you will have an infinite loop
 
 
+def while_func(a):
+
 i = 0
 numbers  = []
 
-while i < 6:
-	print "At the top i is %d" % i
-	numbers.append(i)
+while_func(6)
+print "At the top i is %d" % i
+numbers.append(i)
 
-	i = i + 1
-	print "Numbers now: ", numbers
-	print "At the bottom i is %d" % i
+i = i + 1
+print "Numbers now: ", numbers
+print "At the bottom i is %d" % i
 
 print "The numbers: "
 
