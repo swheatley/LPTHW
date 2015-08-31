@@ -21,7 +21,7 @@ def bear_room():
 	print "There is a bear here."
 	print "The bear has a bunch of honey."
 	print "The fat bear is in front of another door."
-	print "How are you going to move the bear?"
+	print "How are you going to move the bear? (Options are: 'take honey' or 'taunt bear')"
 	bear_moved = False
 
 	while True:
@@ -30,7 +30,7 @@ def bear_room():
 		if choice == "take honey":
 			dead("The bear looks at you and then slaps your face off.")
 		elif choice == "taunt bear" and not bear_moved:
-			print "The bear has moved from the door. You can go through it now."
+			print "The bear has moved from the door. You can go through it now. ( type: 'open door')"
 
 			bear_moved = True
 		elif choice == "taunt bear" and bear_moved:
