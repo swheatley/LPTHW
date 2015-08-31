@@ -36,7 +36,19 @@ for i in elements:
 # Lists:
 # most versatile datatype available
 # Built-in List Functions & Methods:
+		# List Functions
 	# 1. cmp(list1, list2) - compares elements of both lists
 	# 2. len(list) - gives the total length of the list
-
-
+	# 3. max(list) - returns item from the list with max value
+	# 4. min(list) - returns item from the list with min value
+	# 5. list(seq)- converts a tuple into a list
+		# List Methods
+	# 1. list.append()- appends or adds object to list
+	# 2. list.count()- returns count of how many times object occurs in list
+	# 3. list.extend(seq) - appends the contents of seq to list
+	# 4. list.index() - returns the lowest index in list that obj appears
+	# 5. list.insert(index, obj) - inserts object obj into list at offset index
+	# 6. list.pop(obj=list[-1])-removes and returns last object or obj from list
+	# 7. list.remove(obj)- removes object obj from list
+	# 8. list.reverse()- reverses objects of list in place
+	# 9. list.sort([func]) - sorts objects of list, use compare func if given
