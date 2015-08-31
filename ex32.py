@@ -15,7 +15,7 @@ for fruit in fruits:
 	print "A fruit of type: %s" % fruit
 
 # also we can through mixed lists too
-# notie we have to use %r since we don't know what's in it
+# notice we have to use %r since we don't know what's in it
 
 for i in change:
 	print "I got %r" % i
@@ -24,7 +24,7 @@ for i in change:
 elements = []
 
 #then use the range function to do 0 to 5 counts
-for i in range (0. 6):
+for i in range (0, 6): # range() is a built in python funciton.  Used in for loops. Must be integers
 	print "Adding %d to the list" % i
 	#append is a function that lists understand
 	elements.append(i)
@@ -32,3 +32,11 @@ for i in range (0. 6):
 #now we can print them out too
 for i in elements:
 	print "Element was: %d" % i
+
+# Lists:
+# most versatile datatype available
+# Built-in List Functions & Methods:
+	# 1. cmp(list1, list2) - compares elements of both lists
+	# 2. len(list) - gives the total length of the list
+
+
