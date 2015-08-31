@@ -1,34 +1,44 @@
 # Exercise 31: Making Decisions
 
-print "You enter a dark room with two doors. Do you go through door #1 or door # 2?"
+print "Your name is Ang and you are the Avatar.  What bending skill would you like to learn first? Earth, Fire, Wind or Water?"
 
-door = raw_input(">")
+beding = raw_input(">")
 
-if door  == "1":
-	print "There's a giant bear here eating a cheese cake. What do you do?"
-	print "1. Take the cake."
-	print "2. Scream at the bear."
+if bending  == "Earth":
+	print "You need to find a master earth bender.  Who do you seek?."
+	print "1. Toph from Beifong City."
+	print "2. Crazy Bumi "
 
-	bear = raw_input(">")
+	earth_bender = raw_input(">")
 
-	if bear == "1":
-		print "The bear eats your face off. Good job!"
-	elif bear == "2":
-		print "The bear eats your legs off. Good job!"
+	if earth_bender == "1":
+		print "You venture into the tunnels with Toph and practice bending with the badegermoles."
+	elif earth_bender == "2":
+		print "Bumi takes you on a crazy adventure through the city, you don't get much done but boy it was fun!"
 	else:
-		print "Well, doing %s is probably better. Bear runs away" % bear
+		print "You take Apa and fly to the Air temple. You need some inspiration." 
 
-elif door == "2":
-	print "You stare into the endless abyss at Cthulhu's retina."
-	print "1. Blueuberries."
-	print "2. Yellow jacket clothespins."
-	print "3. Understanding revolvers yelling melodies."
+elif bending == "Fire":
+	print "You need to learn to firebend before the fire lord takes over during the eclipse. Who do you seek?"
+	print "1. Lord Zuko from Fire Nation."
+	print "2. Iroh, Uncle to Lord Zuko."
 
-	insanity = raw_input(">")
+	fire_bender = raw_input(">")
 
-	if insanity == "1" or insanity == "2":
+	if fire_bender == "1" or fire_bender == "2":
 		print "Your body survives powered by a mind of jello. Good job!"
 	else:
 		print "The insanity rots your eyes into a pool of muck. Good job!"
+
+elif bending == "Wind":
+	print "You are in a secret tunnel with strange sounds and smells....What do you do?"
+	print "1. Venture deep into the tunnel."
+	print "2."
+	
+
+elif bending == "Water"
+	print ""
+	print ""
+
 else:
-	print "You stumble around and fall on a knife and die. Good job!"
+	print "You don't defeat the fire Lord and hope in the world is lost....."
