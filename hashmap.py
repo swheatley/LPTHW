@@ -18,7 +18,7 @@ def get_bucket(aMap, key):
 	bucket_id = hash_key(aMap, key)
 	return aMap[bucket_id]
 
-def get_slot(aMap,key default=None):
+def get_slot(aMap, key, default=None):
 	"""
 	Returns the index, key, and value of a slot found in a bucket.
 	Returns -1, key, and default ( None if not set) when not found.
@@ -31,7 +31,7 @@ def get_slot(aMap,key default=None):
 			return i, k, v
 	return -1, key, default
 
-def get(aMap, key default=None):
+def get(aMap, key, default=None):
 	"""Gets the value in a bucket for the given key, or the default."""
 	i, k, v = get_slot(aMap, key, default = default)
 	return v
