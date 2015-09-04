@@ -22,8 +22,14 @@ print "There we go: ", stuff
 
 print "Let's do some things with stuff."
 
+# Oranges is printed because it is located in the first index
 print stuff[1]
+# Corn is printed because it is in the last index
 print stuff[-1] # whoa! fancy
+# Corn is printed again because its the last item in the list that is removed first
 print stuff.pop()
+#
 print " ".join(stuff) # what? cool!
+# Telphone # Lights is printed because Telephone is @ the 3rd index
+# and light is @ the fourth index
 print "#".join(stuff[3:5]) # super stellar!
