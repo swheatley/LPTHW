@@ -4,6 +4,7 @@ ten_things = "Apples Oranges Crows Telephone Light Sugar"
 
 print "Wait there are not 10 things in that list. Let's fix that."
 
+# split(' ') method returns a list of all words in the string, seperated by whitespace represented by  " " in the method
 stuff = ten_things.split(' ')
 more_stuff = ["Day", "Night", "Song","Frisbee","Corn","Banana", "Girl","Boy"]
 
@@ -28,7 +29,8 @@ print stuff[1]
 print stuff[-1] # whoa! fancy
 # Corn is printed again because its the last item in the list that is removed first
 print stuff.pop()
-#
+# This method returns the string which is a concatenation of strings. " "
+# means there will be a space in between each string.
 print " ".join(stuff) # what? cool!
 # Telphone # Lights is printed because Telephone is @ the 3rd index
 # and light is @ the fourth index
