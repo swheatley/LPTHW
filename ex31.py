@@ -2,7 +2,7 @@
 
 # Could print out, "What Airbender adventure do you want to go on?"
 def airbender_adventure():
-	print "You are Ang the last Airbender, What bending skill would you like to learn first? Earth, Fire, Air or Water?"
+	print "You are Ang the last Airbender. What Airbender adventure do you want to go on? Earth, Fire, Air or Water?"
 
 	bending = raw_input("Type answer ( in lowercase ): ")
 
@@ -15,7 +15,7 @@ def airbender_adventure():
 	elif bending == "air":
 		air_nation()
 	else:
-		print "You don't defeat the Fire Lord and hope in the Avatar is lost....."
+		air_temple()
 
 def earth_kingdom():
 	print "You need to find a master earth bender.  Who do you seek?."
@@ -26,10 +26,26 @@ def earth_kingdom():
 
 	if earth_bender == "1":
 		print "You venture into the tunnels with Toph and practice bending with the badegermoles."
+		print "Where do you want to go next? Air, Fire or Water?"
+
+		next = raw_input("Type answer ( in lowercase ):")
+
+		if next == "air":
+			return air_nation()
+		elif next == "fire":
+			return fire_nation()
+		elif next == "water":
+			return water_tribe()
+		else:
+			return air_temple()
+
 	elif earth_bender == "2":
 		print "Bumi takes you on a crazy adventure through the city, you don't get much done but boy it was fun!"
+		print "&*&*&*&*&*&*&&*&*&*&*&*&*&&*&*&*&*&*&*&"
+		return air_temple()
 	else:
-		print "You take Apa and fly to the Air temple. You need some inspiration." 
+		return airbender_adventure() 
+
 def fire_nation():
 
 	print "You need to learn to firebend before the Fire Lord takes over. Who do you seek?"
@@ -40,7 +56,7 @@ def fire_nation():
 
 	if fire_bender == "1":
 		print "Lord Zuko helps you harness the power of fire.  You even meet real dragons!"
-		print "&*&*&*&*&*&*&"
+		print "&*&*&*&*&*&*&&*&*&*&*&*&*&&*&*&*&*&*&*&"
 	elif fire_bender == "2":
 		print "Iroh shows you how to redirect lighting.  This a skill only few know.  Then you sit down and enjoy some tea."
 	else:
@@ -49,7 +65,7 @@ def fire_nation():
 def air_nation():
 	print "You were a monk at an Air temple and are a master Air bender. Learn another bending power :)"
 	print "    "
-	return airbender_adventure()
+	return air_temple()
 
 def water_tribe():
 	print " 1.You travel in the future and meet up with Korra of the Southern Water Tribe ."
