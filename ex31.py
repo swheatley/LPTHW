@@ -4,7 +4,7 @@
 def airbender_adventure():
 	print "You are Ang the last Airbender, What bending skill would you like to learn first? Earth, Fire, Air or Water?"
 
-	bending = raw_input("Type answer: ")
+	bending = raw_input("Type answer ( in lowercase ): ")
 
 	if bending == "earth":
 		earth_kingdom()
@@ -40,8 +40,11 @@ def fire_nation():
 
 	if fire_bender == "1":
 		print "Lord Zuko helps you harness the power of fire.  You even meet real dragons!"
+		print "&*&*&*&*&*&*&"
 	elif fire_bender == "2":
 		print "Iroh shows you how to redirect lighting.  This a skill only few know.  Then you sit down and enjoy some tea."
+	else:
+		return eairbender_adventure()
 
 def air_nation():
 	print "You were a monk at an Air temple and are a master Air bender. Learn another bending power :)"
@@ -59,8 +62,18 @@ def water_tribe():
 	elif water_bender == "2":
 		print "You pick up water bending very quickly only after a few attempts.  Water bending is pretty easy for you!"
 	else:
-		print "You take Apa and fly to the Air temple. You need some inspiration."
+		return air_temple()
+
+def air_temple():
+	print "You take Apa and fly to the Air temple. You need some inspiration."
+	print "Do you want to play another game?"
+
+	game = raw_input(" yes or no: ")
+
+	if game == "yes":
 		return airbender_adventure()
+	else:
+		print "You don't defeat the Fire Lord and hope in the Avatar is lost....."
 
 
 airbender_adventure()
