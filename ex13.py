@@ -1,24 +1,30 @@
 # Exercise 13: Parameters, Unpacking, Variables
 # Remember to include three variables before you run it
-from sys import argv
+from sys import argv 
 
-argv =  raw_input("Give me a movie name: ")
-movie = argv
+script,userName = argv
 
-argv =  raw_input("What is your favorite color?: ")
-color = argv
+prompt = " ---> "
 
-argv = raw_input("Are you a cat or dog person?: ")
-animal = argv
+print " %s what is your favorite movie?" % userName
+movie = raw_input(prompt)
 
-argv = int(raw_input("How old are you?: "))
-age = argv
+print " %s are you a cat or a dog person?" % userName
+animal = raw_input(prompt)
+
+if animal == 'dog':
+	print "Dogs are awesome!!! Ceasar Millan would be proud"
+else:
+	print "I'm not helping you remove cat piss from your carpets!"
+
+print "%s are you a male or female?" % userName
+gender = raw_input(prompt)
+
+print "What month is your birthday in?"
+birthday = raw_input(prompt)
+
+print "Here is your story.."
 
 
 
 
-
-print "The movie is:", movie
-print "Favorite color:", color
-print "You are a %s person" % animal
-print "You are %d years old" % age
