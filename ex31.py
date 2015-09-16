@@ -6,8 +6,18 @@ def airbender_adventure():
 
 	bending = raw_input(">")
 
+	if bending == "earth":
+		earth_kingdom()
+	elif bending == "fire":
+		fire_nation()
+	elif bending == "water":
+		water_tribe()
+	elif bending == "air":
+		air_naiton()
+	else:
+		print "Not an option, pick again"
+
 def earth_kingdom():
-if bending  == "Earth":
 	print "You need to find a master earth bender.  Who do you seek?."
 	print "1. Toph from Beifong City."
 	print "2. Crazy Bumi "
@@ -21,7 +31,7 @@ if bending  == "Earth":
 	else:
 		print "You take Apa and fly to the Air temple. You need some inspiration." 
 def fire_nation():
-elif bending == "Fire":
+
 	print "You need to learn to firebend before the Fire Lord takes over. Who do you seek?"
 	print "1. Lord Zuko from Fire Nation."
 	print "2. Iroh, Uncle to Lord Zuko."
@@ -33,10 +43,10 @@ elif bending == "Fire":
 	elif fire_bender == "2":
 		print "Iroh shows you how to redirect lighting.  This a skill only few know.  Then you sit down and enjoy some tea."
 
-elif bending == "Air":
+def air_nation():
 	print "You were a monk at an Air temple and are a master Air bender. Training complete :)"
 	
-def water_nation():
+def water_tribe():
 elif bending == "Water":
 	print " 1.You travel in the future and meet up with Korra of the Southern Water Tribe ."
 	print " 2.You take Katara up on her water bending skills and practice your water wips!"
