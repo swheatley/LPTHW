@@ -1,9 +1,12 @@
 # Exercise 31: Making Decisions
+from sys import exit
+# Could print out, "What Airbender adventure do you want to go on?"
+def airbender_adventure():
+	print "You are Ang the last Airbender, What bending skill would you like to learn first? Earth, Fire, Air or Water?"
 
-print "You are Ang the last Airbender, What bending skill would you like to learn first? Earth, Fire, Air or Water?"
+	bending = raw_input(">")
 
-bending = raw_input(">")
-
+def earth_kingdom():
 if bending  == "Earth":
 	print "You need to find a master earth bender.  Who do you seek?."
 	print "1. Toph from Beifong City."
@@ -17,7 +20,7 @@ if bending  == "Earth":
 		print "Bumi takes you on a crazy adventure through the city, you don't get much done but boy it was fun!"
 	else:
 		print "You take Apa and fly to the Air temple. You need some inspiration." 
-
+def fire_nation():
 elif bending == "Fire":
 	print "You need to learn to firebend before the Fire Lord takes over. Who do you seek?"
 	print "1. Lord Zuko from Fire Nation."
@@ -33,7 +36,7 @@ elif bending == "Fire":
 elif bending == "Air":
 	print "You were a monk at an Air temple and are a master Air bender. Training complete :)"
 	
-
+def water_nation():
 elif bending == "Water":
 	print " 1.You travel in the future and meet up with Korra of the Southern Water Tribe ."
 	print " 2.You take Katara up on her water bending skills and practice your water wips!"
@@ -49,3 +52,6 @@ elif bending == "Water":
 
 else:
 	print "You don't defeat the Fire Lord and hope in the Avatar is lost....."
+
+
+	airbender_adventure()
