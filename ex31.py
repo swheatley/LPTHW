@@ -1,8 +1,7 @@
 # Exercise 31: Making Decisions
 
-# Could print out, "What Airbender adventure do you want to go on?"
 def airbender_adventure():
-	print "You are Ang the last Airbender. What Airbender adventure do you want to go on? Earth, Fire, Air or Water?"
+	print "You are Ang the last Airbender. What bending power would you like to master first? Earth, Fire, Air or Water?"
 
 	bending = raw_input("Type answer ( in lowercase ): ")
 
@@ -22,7 +21,7 @@ def earth_kingdom():
 	print "1. Toph from Beifong City."
 	print "2. Crazy Bumi "
 
-	earth_bender = raw_input("Type answer 1 or 2: ")
+	earth_bender = int(raw_input("Type answer 1 or 2: "))
 
 	if earth_bender == "1":
 		print "You venture into the tunnels with Toph and practice bending with the badegermoles."
@@ -52,7 +51,7 @@ def fire_nation():
 	print "1. Lord Zuko from Fire Nation."
 	print "2. Iroh, Uncle to Lord Zuko."
 
-	fire_bender = raw_input("Type answer 1 or 2: ")
+	fire_bender = int(raw_input("Type answer 1 or 2: "))
 
 	if fire_bender == "1":
 		print "Lord Zuko helps you harness the power of fire.  You even meet real dragons!"
@@ -60,18 +59,21 @@ def fire_nation():
 	elif fire_bender == "2":
 		print "Iroh shows you how to redirect lighting.  This a skill only few know.  Then you sit down and enjoy some tea."
 	else:
-		return eairbender_adventure()
+		return air_temple()
 
 def air_nation():
-	print "You were a monk at an Air temple and are a master Air bender. Learn another bending power :)"
-	print "    "
-	return air_temple()
+	print "You were a monk at an Air temple and are a master Air bender. Learn another bending power :) \nWhat bending power do you want to try next?\n Earth, Fire, or Water?"
+	
+	another_skill = raw_input("Type answer ( in lowercase ): ")
+
+	if another_skill == 
+	
 
 def water_tribe():
 	print " 1.You travel in the future and meet up with Korra of the Southern Water Tribe ."
 	print " 2.You take Katara up on her water bending skills and practice your water wips!"
 
-	water_bender = raw_input("Type answer 1 or 2: ")
+	water_bender = int(raw_input("Type answer 1 or 2: "))
 
 	if water_bender == "1":
 		print "She helps you master the art of water bending and you help her reach new heights in air bending!."
@@ -81,8 +83,7 @@ def water_tribe():
 		return air_temple()
 
 def air_temple():
-	print "You take Apa and fly to the Air temple. You need some inspiration."
-	print "Do you want to play another game?"
+	print "You take Apa and fly to the Air temple. You need some inspiration.\nDo you want to play another game?"
 
 	game = raw_input(" yes or no: ")
 
