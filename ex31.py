@@ -1,10 +1,10 @@
 # Exercise 31: Making Decisions
-from sys import exit
+
 # Could print out, "What Airbender adventure do you want to go on?"
 def airbender_adventure():
 	print "You are Ang the last Airbender, What bending skill would you like to learn first? Earth, Fire, Air or Water?"
 
-	bending = raw_input(">")
+	bending = raw_input("Type answer: ")
 
 	if bending == "earth":
 		earth_kingdom()
@@ -13,16 +13,16 @@ def airbender_adventure():
 	elif bending == "water":
 		water_tribe()
 	elif bending == "air":
-		air_naiton()
+		air_nation()
 	else:
-		print "Not an option, pick again"
+		print "You don't defeat the Fire Lord and hope in the Avatar is lost....."
 
 def earth_kingdom():
 	print "You need to find a master earth bender.  Who do you seek?."
 	print "1. Toph from Beifong City."
 	print "2. Crazy Bumi "
 
-	earth_bender = raw_input(">")
+	earth_bender = raw_input("Type answer 1 or 2: ")
 
 	if earth_bender == "1":
 		print "You venture into the tunnels with Toph and practice bending with the badegermoles."
@@ -36,7 +36,7 @@ def fire_nation():
 	print "1. Lord Zuko from Fire Nation."
 	print "2. Iroh, Uncle to Lord Zuko."
 
-	fire_bender = raw_input(">")
+	fire_bender = raw_input("Type answer 1 or 2: ")
 
 	if fire_bender == "1":
 		print "Lord Zuko helps you harness the power of fire.  You even meet real dragons!"
@@ -44,14 +44,15 @@ def fire_nation():
 		print "Iroh shows you how to redirect lighting.  This a skill only few know.  Then you sit down and enjoy some tea."
 
 def air_nation():
-	print "You were a monk at an Air temple and are a master Air bender. Training complete :)"
-	
+	print "You were a monk at an Air temple and are a master Air bender. Learn another bending power :)"
+	print "    "
+	return airbender_adventure()
+
 def water_tribe():
-elif bending == "Water":
 	print " 1.You travel in the future and meet up with Korra of the Southern Water Tribe ."
 	print " 2.You take Katara up on her water bending skills and practice your water wips!"
 
-	water_bender = raw_input(">")
+	water_bender = raw_input("Type answer 1 or 2: ")
 
 	if water_bender == "1":
 		print "She helps you master the art of water bending and you help her reach new heights in air bending!."
@@ -59,9 +60,7 @@ elif bending == "Water":
 		print "You pick up water bending very quickly only after a few attempts.  Water bending is pretty easy for you!"
 	else:
 		print "You take Apa and fly to the Air temple. You need some inspiration."
-
-else:
-	print "You don't defeat the Fire Lord and hope in the Avatar is lost....."
+		return airbender_adventure()
 
 
-	airbender_adventure()
+airbender_adventure()
