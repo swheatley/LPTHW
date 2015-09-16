@@ -1,5 +1,5 @@
 # Exercise 13: Parameters, Unpacking, Variables
-# Remember to include three variables before you run it
+# Remember to include your name as a variable before you run the program
 from sys import argv 
 
 script,userName = argv
