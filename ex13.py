@@ -15,7 +15,7 @@ animal = raw_input(prompt)
 if animal == 'dog':
 	print "Dogs are awesome!!! Ceasar Millan would be proud"
 else:
-	print "I'm not helping you remove cat piss from your carpets!"
+	print "I'm not helping you remove cat pee from your clothes!"
 
 print "%s are you a male or female?" % userName
 gender = raw_input(prompt)
