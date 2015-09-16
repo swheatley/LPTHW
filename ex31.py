@@ -23,22 +23,22 @@ def earth_kingdom():
 
 	earth_bender = int(raw_input("Type answer 1 or 2: "))
 
-	if earth_bender == "1":
+	if earth_bender == 1:
 		print "You venture into the tunnels with Toph and practice bending with the badegermoles."
 		print "Where do you want to go next? Air, Fire or Water?"
 
 		next = raw_input("Type answer ( in lowercase ):")
 
-		if next == "air":
+		if next == " air":
 			return air_nation()
-		elif next == "fire":
+		elif next == " fire":
 			return fire_nation()
-		elif next == "water":
+		elif next == " water":
 			return water_tribe()
 		else:
 			return air_temple()
 
-	elif earth_bender == "2":
+	elif earth_bender == 2:
 		print "Bumi takes you on a crazy adventure through the city, you don't get much done but boy it was fun!"
 		print "&*&*&*&*&*&*&&*&*&*&*&*&*&&*&*&*&*&*&*&"
 		return air_temple()
@@ -53,20 +53,25 @@ def fire_nation():
 
 	fire_bender = int(raw_input("Type answer 1 or 2: "))
 
-	if fire_bender == "1":
-		print "Lord Zuko helps you harness the power of fire.  You even meet real dragons!"
+	if fire_bender == 1:
+		print "Lord Zuko helps you harness the power of fire. You even meet real dragons!"
 		print "&*&*&*&*&*&*&&*&*&*&*&*&*&&*&*&*&*&*&*&"
-	elif fire_bender == "2":
+	elif fire_bender == 2:
 		print "Iroh shows you how to redirect lighting.  This a skill only few know.  Then you sit down and enjoy some tea."
 	else:
 		return air_temple()
 
 def air_nation():
-	print "You were a monk at an Air temple and are a master Air bender. Learn another bending power :) \nWhat bending power do you want to try next?\n Earth, Fire, or Water?"
+	print "You were a monk at the Air temple and are a master Air bender. Learn another bending power :) \nWhat bending power do you want to try next?\n Earth, Fire, or Water?"
 	
 	another_skill = raw_input("Type answer ( in lowercase ): ")
 
-	if another_skill == 
+	if another_skill == "earth":
+		return earth_kingdom()
+	elif another_skill == "fire":
+		return fire_nation()
+	else:
+		return water_tribe()
 	
 
 def water_tribe():
@@ -75,9 +80,9 @@ def water_tribe():
 
 	water_bender = int(raw_input("Type answer 1 or 2: "))
 
-	if water_bender == "1":
+	if water_bender == 1:
 		print "She helps you master the art of water bending and you help her reach new heights in air bending!."
-	elif water_bender == "2":
+	elif water_bender == 2:
 		print "You pick up water bending very quickly only after a few attempts.  Water bending is pretty easy for you!"
 	else:
 		return air_temple()
